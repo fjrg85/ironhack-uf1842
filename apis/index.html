@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub User Info</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <div>
             <label for="username">Enter GitHub username:</label>
             <input type="text" id="username" name="username">
-            <button>Get Info</button>
+            <button id="GetInfo" onclick="GetInfo()">Get Info</button>
         </div>
         <table>
             <thead>

@@ -12,7 +12,17 @@
  */
 
 function filterProgrammingLanguages(languages, minYears) {
+    // Filtramos los lenguajes de programación que cumplen con el mínimo de años de experiencia
+    const filteredLanguages = languages.filter(language => language.years >= minYears);
+    
+    // Mapeamos los lenguajes filtrados para devolver solo sus nombres
+    return filteredLanguages.map(language => language.name);
 
+    // Usar un solo método de array para filtrar y mapear
+    /*return languages
+        .filter(language => language.years >= minYears)
+        .map(language => language.name);
+    */
 }
 
 // Caso 1: Candidata con suficientes años de experiencia en algunos lenguajes
